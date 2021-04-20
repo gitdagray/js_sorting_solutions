@@ -22,7 +22,7 @@ const numberSortAsc = (array) => {
     return array.sort((a, b) => a - b);
 }
 
-//console.log(numberSortAsc(arrayOfNumbers));
+// console.log(numberSortAsc(arrayOfNumbers));
 
 /*=== Solution 2: Sort numbers in descending order ===*/
 
@@ -31,7 +31,7 @@ const numberSortDesc = (array) => {
     return array.sort((a, b) => a - b).reverse();
 }
 
-//console.log(numberSortDesc(arrayOfNumbers));
+// console.log(numberSortDesc(arrayOfNumbers));
 
 /*== Solution 3: Sort an array of numbers AND strings ==*/
 
@@ -49,7 +49,7 @@ const sortNumbersAndStrings = (array) => {
     return [...numArray, ...strArray];
 }
 
-//console.log(sortNumbersAndStrings(arrayNumAndString));
+// console.log(sortNumbersAndStrings(arrayNumAndString));
 
 
 /* === Challenge: Define a function that takes an array of strings, and returns the most commonly occurring string ===*/
@@ -66,10 +66,10 @@ const findMostCommonString = (array) => {
     ).pop();
 }
 
-//console.log(findMostCommonString(arrayOfStrings));
+// console.log(findMostCommonString(arrayOfStrings));
 
 // Example of array.filter():
-//console.log(arrayOfStrings.filter(str => str === "one"));
+// console.log(arrayOfStrings.filter(str => str === "one"));
 
 // downside to this solution: it modifies original array
 // downside to this solution: it does not allow for ties 
@@ -84,8 +84,8 @@ const findMostCommonStringNoMod = (array) => {
     ).pop();
 }
 
-//console.log(findMostCommonStringNoMod(arrayOfStrings));
-//console.log(arrayOfStrings);
+// console.log(findMostCommonStringNoMod(arrayOfStrings));
+// console.log(arrayOfStrings);
 
 // downside to this solution: it does not allow for ties 
 
@@ -119,7 +119,7 @@ const mostCommonWithTies = (array) => {
     return resultArray;
 }
 
-//console.log(mostCommonWithTies(arrayOfStrings));
+// console.log(mostCommonWithTies(arrayOfStrings));
 
 // downside to this solution: object keys are converted to strings. This solution converts all array data to string type
 
@@ -142,7 +142,7 @@ const countAllWords = (string) => {
     return countObj;
 }
 
-//console.log(countAllWords(wordString));
+// console.log(countAllWords(wordString));
 
 /*=== Challenge: Return the most common word in a string ===*/
 
@@ -155,4 +155,4 @@ const mostCommonWord = (string) => {
     return mostCommonWithTies(wordArray);
 }
 
-//console.log(mostCommonWord(wordString));
+// console.log(mostCommonWord(wordString));
